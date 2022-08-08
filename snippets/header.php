@@ -13,9 +13,13 @@
 
 <body>
   <header class="header-main">
-    <div class="header-top"></div>
-    <img class="header-logo" src="<?= $site->image()->url() ?>" alt="layered orange fused glass disc with bubbles">
+
+    <div class="header-top">
+    </div>
     <div class="header-spacer"></div>
+    <div class="header-logo-box">
+      <img class="header-logo" src="<?= $site->image()->url() ?>" alt="layered orange fused glass disc with bubbles">
+    </div>
     <div class="header-text">
       <h1 class="page-title">
         <?= $site->title() ?>
@@ -24,7 +28,8 @@
         <?= $site->strapline() ?>
       </h2>
     </div>
-    <div class="header-bottom"></div>
+    <div class="header-bottom">
+    </div>
     <nav class="header-nav">
       <ul class="nav-main">
         <?php foreach ($site->children()->listed() as $item): ?>
@@ -34,4 +39,6 @@
         <?php endforeach ?>
       </ul>
     </nav>
+
+
   </header>
